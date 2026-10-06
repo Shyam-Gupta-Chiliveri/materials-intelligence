@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Materials RAG — ISO/DIN Standards Assistant</title>
+  <meta name="description" content="Ask questions about ISO/DIN standards, metallography, and hardness testing. Answers come from a local FAISS index of technical PDFs." />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Materials RAG — ISO/DIN Standards Assistant" />
+  <meta property="og:description" content="Retrieval-augmented generation over ISO/DIN and metallography documents. Ask in plain English, get sourced answers." />
+  <meta property="og:url" content="https://shyam-gupta-chiliveri.github.io/materials-intelligence/rag/" />
+  <meta property="og:image" content="https://shyam-gupta-chiliveri.github.io/materials-intelligence/og.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <style>
+    :root { color-scheme: light; --ink:#111; --muted:#5c5c5c; --line:#e6e6e6; --bg:#fafafa; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif; color:var(--ink); background:var(--bg); line-height:1.5; }
+    main { max-width: 760px; margin: 0 auto; padding: 56px 24px 80px; }
+    .kicker { font-size: 13px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+    h1 { font-size: clamp(28px, 5vw, 42px); line-height: 1.15; margin: 10px 0 16px; font-weight: 650; }
+    p { margin: 0 0 16px; color: #222; }
+    .muted { color: var(--muted); }
+    .hero { width: 100%; border-radius: 14px; border: 1px solid var(--line); margin: 28px 0 32px; display:block; }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; margin: 28px 0 36px; }
+    a.btn { display:inline-block; padding: 12px 18px; border-radius: 999px; text-decoration:none; font-weight:600; font-size:15px; }
+    a.primary { background:#111; color:#fff; }
+    a.ghost { background:#fff; color:#111; border:1px solid var(--line); }
+    ul { padding-left: 18px; margin: 0 0 24px; }
+    li { margin: 8px 0; }
+    footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--line); font-size: 14px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="kicker">Generative AI · Retrieval</div>
+    <h1>Materials RAG System</h1>
+    <p>Ask questions about ISO/DIN standards, hardness testing, grain size, and sample preparation. The assistant retrieves the matching textbook pages, then writes a sourced answer.</p>
+    <img class="hero" src="../og.png" alt="Materials analysis reference image" />
+    <div class="actions">
+      <a class="btn primary" href="https://rag.138.2.179.154.sslip.io">Open live app</a>
+      <a class="btn ghost" href="https://github.com/Shyam-Gupta-Chiliveri/AI-based-material-analysis-system-with-multimodal-learning">View source on GitHub</a>
+    </div>
+    <ul>
+      <li>FAISS vector index of ISO/DIN and metallography PDFs</li>
+      <li>BGE-small embeddings, LangChain, Groq LLM</li>
+      <li>Answers include source document and page</li>
+    </ul>
+    <p class="muted">Built by Shyam Sunder Chiliveri. Hosted on Oracle Cloud Always Free.</p>
+    <footer>RAG · LangChain · FAISS · Streamlit</footer>
+  </main>
+</body>
+</html>
